@@ -1,0 +1,319 @@
+/* WashU colors 
+Red: #A61518
+Gray: #6B7473
+*/
+  
+/*
+WUSTL CSS for xaringan slides 
+Building off the Rutgers one created by Joseph V. Casillas
+*/
+
+/* Package defaults that we slightly tweak */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
+
+a, a > code {
+  color: #d15f27; /* rgb(249, 38, 114) */
+  text-decoration: none;
+}
+
+/* slightly lower and bigger than default */
+.footnote {
+  position: absolute;
+  bottom: 1em;
+  padding-right: 4em;
+  font-size: 95%;
+}
+
+/* important code slightly red */
+.remark-code-line-highlighted {
+  background-color: #edcdb7 !important;
+}
+
+/* color tweak */
+.inverse {
+  background-color: #172752;
+  color: #FFFFFF;
+  text-shadow: 0 0 20px #333;
+}
+
+/* slightly spacing change */
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #67c8c7;
+  line-height: 1.0em;
+}
+
+/* Two-column layout (slightly wider for aspect ration) */
+.left-column {
+  color: #777;
+  width: 25%;
+  height: 92%;
+  float: left;
+}
+
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+
+/* slightly thiner to suppor aspect ration */
+.right-column {
+  width: 70%;
+  float: right;
+  padding-top: 1em;
+}
+
+.pull-left {
+  float: left;
+  width: 45%;
+}
+
+.pull-right {
+  float: right;
+  width: 45%;
+}
+
+.pull-right ~ * {
+  clear: both;
+}
+
+img, video, iframe {
+  max-width: 100%;
+}
+
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+
+/* adjust table horizontal spacing */
+th, td {
+    padding:0 15px 0 15px;
+}
+
+/* remove color from tables */
+table {
+  margin: auto;
+  border-top: none;
+  border-bottom: none;
+}
+
+table thead th { border-bottom: none; }
+thead, tfoot, tr:nth-child(even) { background: none; }
+
+/* leave this alone */
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
+
+/*~~~~~~~~~~~~~~*/
+/* WashU additions */
+/*~~~~~~~~~~~~~~*/
+
+/* Title slide */
+
+/* Add image and change bg color */
+.title-slide {
+  background-image: url(./assets/University_Libraries/1_Line_Logo/PNG/University_Libraries_1line_pos_1c_1000_01.png), 
+  url(./assets/Tagline_Artwork/wustl-libraries-full-color-reverse-rgb.png);
+  background-position: left top, right top;
+  background-size: 40% auto, 30% auto;
+  background-color: #d8eff0;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* H1 fonts */
+.title-slide h1 {
+  color: #172752;
+  font-family: 'Source Sans Pro', serif;
+  padding-top: 250px;
+  font-weight: 900;
+  font-size: 45px;
+  text-align: left;
+  text-shadow: none;
+  padding-bottom: 18px;
+  margin-bottom: 18px;
+}
+
+/* H2 fonts */
+.title-slide h2 {
+  color: #d15f27;
+  font-family: 'Source Sans Pro', serif;
+  font-size: 35px;
+  font-weight: normal;
+  text-align: left;
+  text-shadow: none;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+/* H3 fonts */
+.title-slide h3 {
+  font-size: 28px;
+  font-weight: normal;
+  color: #172752;
+  font-family: 'Source Sans Pro', serif;
+  text-align: left;
+  text-shadow: none;
+  padding: 0px;
+  margin: 0px;
+  line-height: 1;
+}
+
+/* Remove slide count */
+.title-slide .remark-slide-number {
+  text-shadow: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~*/
+/*    BODY TEXT     */
+/*~~~~~~~~~~~~~~~~~~*/
+/*This is an addition to the WUSTL css file. To conform to the WUSTL fonts used. */
+body { font-family: 'Source Sans Pro', serif;
+       font-weight: 400;
+       color: #192852;
+}
+h1, h2, h3 {
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 900;
+  color: #192852;
+}
+
+/*~~~~~~~~~~~~~~~~~~*/
+/* SECTION DIVIDERS */
+/*~~~~~~~~~~~~~~~~~~*/
+
+/* section divider literary blue */
+.title-slide-section-literary-blue {
+  background-color: #67c8c7;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* section divider literary blue H1 fonts */
+.title-slide-section-literary-blue h1, .title-slide-section-literary-blue h2, .title-slide-section-literary-blue h3, .title-slide-section-literary-blue p {
+  color: #172752;
+}
+
+/* section divider grey */
+.title-slide-section-orange {
+  background-color: #d15f27;
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* section divider grey H1 fonts */
+.title-slide-section-grey h1, .title-slide-section-grey h2, .title-slide-section-grey h3 {
+  color: #172752;
+}
+
+.title-slide-section-grey p {
+  color: #172752;
+}
+
+/*~~~~~~~~~~~~~~~~~~*/
+/* FINAL SLIDE      */
+/*~~~~~~~~~~~~~~~~~~*/
+
+.title-slide-final {
+  background-color: #272822;
+  color: #d8eff0;
+  padding-left: 100px;
+  text-shadow: 0 0 20px #333;
+  text-align: center;
+}
+
+.title-slide-final h1 {
+  color: #172752;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~*/
+/* Global adjustments */
+/*~~~~~~~~~~~~~~~~~~~~*/
+
+/* Add padding to all slides for 16:9 aspect ratio */
+.remark-slide-content {
+  padding-left: 100px;  /* delete this for 4:3 aspect ratio */
+}
+
+/* Color adjustments for text */
+
+/* Make bold syntax compile to RU-red */
+strong {
+  color: #172752;
+}
+
+.UniformBlue {
+  color: #172752;
+}
+
+/* Add blue tag */
+.CuratorBlue {
+  color: #515D7D;
+  font-weight: bold;
+}
+
+/* Add grey tag */
+.grey {
+  color: #515151;
+}
+
+.lightgrey {
+  color: #818181;
+}
+
+/* Force black */
+.black {
+  color: black;
+  font-weight: bold;
+}
+
+/* Add white tag */
+.white {
+  color: white;
+}
+
+/* Color adjustments to headers */
+h1 {
+  color: #172752;
+}
+
+h3 {
+  color: #172752;
+}
+
+/* Font size tags */
+.big {
+  font-size: 1.5em;
+}
+
+/* ru blockquote */
+ru-blockquote {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-left: solid 10px #cc0033;
+  background-color: #818181;
+  padding: 1em;
+  color: #fff;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+/*testing text */
+.my-one-page-font {
+  font-size: 30px;
+  font-family: 'Source Sans Pro', serif;
+  font-weight: 400;
+}
+
+/*changing the font of the code */
+.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace;
+                                    font-size: 60%;
+                                  }
